@@ -1,0 +1,28 @@
+* {margin: 0;padding: 0;box-sizing: border-box;}
+body {font-family: 'Noto Sans KR';}
+a {text-decoration: none;}
+li {list-style: none;}
+/* header 영역 */
+header {width: 100%;}
+header .mainBg {width: 100%; position: relative; display: flex;}
+header .mainBg .LtBg {width: 20%; height: 100vh; background-color: #1945cc;}
+header .mainBg .RhtBg {width: 80%; height: 100vh; background: url('../images/mainBg.png'); background-position: center bottom; background-repeat: no-repeat; background-size: cover;}
+header nav { width: 100%; margin: 0 auto; display: flex; align-items: center; padding: 30px 60px; position: absolute; top: 0%;}
+.logo {margin-right: 340px;}
+header nav .logo img {width: 100%; max-width: 146px; cursor: pointer;}
+header nav .mainNav {display: flex; align-items: center; margin-right: 180px;}
+header nav .mainNav li a {padding-right: 60px; color: #fff; font-size: 18px; font-weight: 400;}
+header nav .NavBtn {background-color: #fff; padding: 10px 30px; border: 0; box-shadow: 2px 6px 17px -3px rgba(0,0,0,0.3); margin-right: 120px;}
+header nav .NavBtn a {color: #004d99; font-weight: 600; font-size: 14px; letter-spacing: -0.08em; cursor: pointer;}
+.mainQckmn {width: 80%; max-width: 130px; position: absolute; top: 0; right: 3%; box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.11);}
+.mainQckmn .QckBtn {display: flex; flex-direction: column;}
+.mainQckmn .QckBtn button {background-color: #00264d; border: 0; padding: 20px 0; margin-bottom: 3px;}
+.mainQckmn .QckBtn button a {color: #fff; font-weight: 600; font-size: 14px;}
+/* header 영역 end */
+.mainCnt01 {width: 80%; margin:0 auto; position: absolute; top: 20%; left: 9%;}
+.mainCnt01 .cntInf {display: flex; justify-content: center;}
+.mainCnt01 .cntInf .cntImg img {width: 80%; max-width: 480px; box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.2); margin-right: 90px;}
+.mainCnt01 .cntInf .cntTxt {padding: 80px 0; color: #fff; letter-spacing: 0.02em; font-family: Arial, Helvetica, sans-serif;}
+.mainCnt01 .cntInf .cntTxt .tit {font-size: 18px; font-weight: 600; line-height: 18px;display: block; margin-bottom: 15px;}
+.mainCnt01 .cntInf .cntTxt strong {font-size: 80px; font-weight: 600; line-height: 60px; display: block; margin-bottom: 20px;}
+.mainCnt01 .cntInf .cntTxt .sbTxt {font-size: 20px; letter-spacing: -0.1em; line-height: 1.5; margin-top: 50px;}
