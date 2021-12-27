@@ -2,6 +2,7 @@
 body {font-family: 'Noto Sans KR';}
 a {text-decoration: none;}
 li {list-style: none;}
+
 /* header 영역 */
 header {width: 100%;}
 header .mainBg {width: 100%; position: relative; display: flex;}
@@ -14,11 +15,13 @@ header nav .mainNav {display: flex; align-items: center; margin-right: 180px;}
 header nav .mainNav li a {padding-right: 60px; color: #fff; font-size: 18px; font-weight: 400;}
 header nav .NavBtn {background-color: #fff; padding: 10px 30px; border: 0; box-shadow: 2px 6px 17px -3px rgba(0,0,0,0.3); margin-right: 120px;}
 header nav .NavBtn a {color: #004d99; font-weight: 600; font-size: 14px; letter-spacing: -0.08em; cursor: pointer;}
-.mainQckmn {width: 80%; max-width: 130px; position: absolute; top: 0; right: 3%; box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.11);}
+
+.mainQckmn {width: 80%; max-width: 130px; position: fixed; top: 0; right: 3%; box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.11); z-index: 100;}
 .mainQckmn .QckBtn {display: flex; flex-direction: column;}
 .mainQckmn .QckBtn button {background-color: #00264d; border: 0; padding: 20px 0; margin-bottom: 3px;}
 .mainQckmn .QckBtn button a {color: #fff; font-weight: 600; font-size: 14px;}
 /* header 영역 end */
+
 .mainCnt01 {width: 80%; margin:0 auto; position: absolute; top: 20%; left: 9%;}
 .mainCnt01 .cntInf {display: flex; justify-content: center;}
 .mainCnt01 .cntInf .cntImg img {width: 80%; max-width: 480px; box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.2); margin-right: 90px;}
@@ -26,3 +29,82 @@ header nav .NavBtn a {color: #004d99; font-weight: 600; font-size: 14px; letter-
 .mainCnt01 .cntInf .cntTxt .tit {font-size: 18px; font-weight: 600; line-height: 18px;display: block; margin-bottom: 15px;}
 .mainCnt01 .cntInf .cntTxt strong {font-size: 80px; font-weight: 600; line-height: 60px; display: block; margin-bottom: 20px;}
 .mainCnt01 .cntInf .cntTxt .sbTxt {font-size: 20px; letter-spacing: -0.1em; line-height: 1.5; margin-top: 50px;}
+
+#cntSld01Prg {position: absolute; top: 670px; left: 45%; z-index: 10;}
+#cntSld01Prg > div {display: flex; flex-wrap: wrap; align-items: center;}
+#cntSld01Prg > div > a {width: 11px; height: 22px;}
+#cntSld01Prg > div > a > img {width: 100%;}
+#cntSld01Prg > div > div {width: 317px; height: 1px; margin: 0 20px; background-color: rgba(255,255,255,0.4); position: relative;}
+#cntSld01Prg > div > div > span {position: absolute;width:0; top: 0; left: 0; background-color: #fff; height: 1px;transition:width 0.5s linear;}
+#cntSld01Prg > div > div > span.on{width:100%;transition:width 7.5s linear;}
+#cntSld01Prg > div > div > s {width: 9px; height: 9px; position: absolute; top:0;left:0; transform: translateY(-50%) translateX(-50%); background-color: #fff;transition:left 0.5s linear;}
+#cntSld01Prg > div > div > s.on{left:100%;transition:left 7.5s linear;}
+#cntSld01Prg > div > span {padding-left: 30px;}
+#cntSld01Prg > div > span > span {font-weight: bold; color: #fff; font-size: 14px; line-height: 22px; letter-spacing: 0;}
+/* main page 영역 끝 */
+
+.cvsCnt01 {background: url('../images/img_sample07.png') no-repeat; background-size: cover; background-position: center center; height: 640px; display: flex; align-items: center;}
+.cvsCnt01 > div {display: flex; justify-content: center; align-items: center; flex-direction: column; width: 100%; max-width: 1920px; margin: 0 auto;}
+.cvsCnt01 > div > strong {font-size: 26px; color: #fff; font-weight: 600; text-align: center; padding-bottom: 20px;}
+.cvsCnt01 > div > p {font-size: 32px; color: #fff; font-weight: 300; line-height: 30px; padding-bottom: 80px;}
+.cvsCnt01 > div > ul {width: 100%;display: flex; justify-content: space-evenly; padding-bottom: 110px;}
+.cvsCnt01 > div > ul > li > span {display: block; text-align: center; font-size: 40px; color: #fff;}
+.cvsCnt01 > div > ul > li > span > strong {color: #00d9b5; font-size: 80px; line-height: 80px; display: inline-block;}
+.cvsCnt01 > div > ul > li > div {color: #fff; font-size: 18px; text-align: center; padding-top: 40px; line-height: 24px; font-weight: 500;}
+
+.viewBtn {width: 150px; height: 45px; color: #fff; display: inline-flex; font-size: 16px; align-items: center; border: 2px #fff solid; font-weight: bold; justify-content: center; letter-spacing: -0.05em; position: relative; align-items: center; line-height: 42px; box-shadow: 3px 4px 0px 0px rgb(5 17 51 / 20%);}
+.viewBtn s {width: 30px; height: 14px; background: url('../images/img_vewBtn.png'); background-size: 100% auto; position: absolute; left: -13px;}
+/* cvsCnt01 영역 끝 */
+
+.cvsCnt02 {padding: 115px 0 115px 0;}
+.cvsCnt02 > div {max-width: 1360px; margin: 0 auto; position: relative; width: calc(100% -40px); margin-bottom: 50px;}
+
+.cntTtl > strong {color: #001933; font-size: 30px; display: block; padding-bottom: 30px;     letter-spacing: -0.04em;}
+.cntTtl > span {color: #001933; font-size: 30px; display: block; font-weight: 300; letter-spacing: -0.1em; line-height: 44px;} 
+.cntTtl > span > b { color: #2d62cc;}
+
+.vewMr {text-align: right; margin-top: -20px;}
+.vewMoreBlu {color: #1945cc; font-weight: bold; font-size: 16px; display: inline-block; letter-spacing: -0.05em;}
+.vewMoreBlu s {width: 30px; height: 14px; background: url('../images/img_vewBtnBlu.png') no-repeat; background-size: 100% auto; display: inline-block; margin-right: 18px; transform: translateY(1px);}
+
+.blgCtl {position: absolute; top: calc(50% - 35px); left: 50%; width: 100%; z-index: 10;}
+
+.blgSldItm {width: 670px; margin-right: 40px; display: flex; background-color: #fff; transition: all 0.5s; cursor: pointer;}
+.blgSldItm > img {max-width: 360px; width: 50%; height: 250px; min-height: 183px;}
+.blgSldItm > div {width: calc(100% - 330px); padding: 15px 30px; border: 1px #ebebeb solid; border-left: 0;}
+.blgSldItm > div > span {display: inline-flex; font-size: 13px; color: #fff; padding: 0 15px; height: 28px; align-items: center;}
+.blgSldItm > div > div {display: flex; flex-direction: column; height: calc(100% + 15px - 46px); flex-wrap: wrap; }
+.blgSldItm > div > div > strong {color: #000; font-size: 18px; line-height: 24px; margin-bottom: 15px; margin-top: 10px; height: 48px;}
+.blgSldItm > div > div > p {color: #737980; font-size: 14px; line-height: 22px; text-overflow: ellipsis; height: 24px; word-break: keep-all;}
+.blgSldItm > div > a {transform: translateY(-25px);}
+
+.VewBtnGry {color: #a1aab2; font-size: 16px; display: flex; letter-spacing: 0;}
+.VewBtnGry > s {width: 30px; height: 14px; background: url('../images/img_vewBtnGry.png') no-repeat; background-size: 100% auto; margin-left: auto; margin-top: 5px;}
+.VewBtnBlu {color: #a1aab2; font-size: 16px; display: flex; letter-spacing: 0;}
+.VewBtnBlu > s {width: 30px; height: 14px; background: url('../images/img_vewBtnBlu.png') no-repeat; background-size: 100% auto; margin-left: auto; margin-top: 5px;}
+
+.blgCtl {position: absolute; top: calc(50% - 25px); left: 0; width: 100%; z-index: 10;}
+.blgSldPrv {width: 19px; height: 36px; position: absolute; background: url('../images/img_sldPrv02.png') no-repeat; background-size: 100% auto; left: -60px; }
+.blgSldNxt {width: 19px; height: 36px; position: absolute; background: url('../images/img_sldNxt02.png') no-repeat; background-size: 100% auto; right: -60px; }
+/* cvsCnt02 영역 끝 */
+
+.cvsCnt03 > div { position: relative; height: 860px;}
+.cvsCnt03 > div > img:first-child {position: absolute; top: 160px; right: calc(50%) - 260px; top: 50%; min-width: 1220px;}
+.cvsCnt03 > div > img:last-child{top:52%;left:calc(50% - 220px);width:calc(440px);transform:translateY(-60%);}
+
+.cnt03sls > div {background-color: #1945cc;position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; opacity:0; transition:opacity 0.5s;}
+.cnt03sls > div.on{opacity:1; transition: all 1.0s; z-index: 10;}
+.cnt03sls > div.on > img:first-child{right:calc(50% - 260px);transition:all 1.0s;}
+.cnt03sls > div > span {position: absolute; font-size: 280px; color: #fff; font-weight: bold; opacity: 0.08; top: 160px; right: calc(50%) - 260px; font-family: Arial, Helvetica, sans-serif;}
+.cnt03sls > div > div {width: 87%; position: absolute; top: 245px; display: flex; align-items: flex-end; flex-direction: column;}
+.cnt03sls > div > div > strong {color: #fff; font-size: 50px; font-weight: bold; text-align: right; padding-bottom: 40px;}
+.cnt03sls > div > div > p {font-size: 18px; color: #fff; font-weight: bold; text-align: right; padding-bottom: 160px;}
+.cnt03sls > div > img:last-child {position: absolute; top: 190px; left: calc(50% - 100px);box-shadow: 15px 26px 40px 0px rgb(0 0 0 / 40%);}
+
+.cnt03Chp {position:absolute;top:50%;left:calc(50%);transform:translateY(-50%) translateX(-100%);max-width:680px;width:calc(50% - 50px);z-index:15;}
+.cnt03Chp > strong {font-size:24px;color:#fff;padding-bottom:35px;display:block;}
+.cnt03Chp > span {font-size:30px;color:#fff;padding-bottom:50px;display:block;}
+.cnt03Chp > ul {max-width: 300px;}
+.cnt03Chp > ul > li > a.on {background-color:#1945cc;box-shadow: 15px 26px 40px 0px rgba(0, 0, 0, 0.4);transition:all 1.0s;}
+.cnt03Chp > ul > li > a {display:block;line-height:70px;color:#fff;font-size:18px;padding:0 40px;font-weight:bold;transition:all 1.0s;}
+.cnt03Chp > ul > li > a > span {color:#00d5ff;font-weight:bold;padding-right:20px;transition:all 1.0s;}
