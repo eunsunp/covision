@@ -1,6 +1,6 @@
 * {margin: 0;padding: 0;box-sizing: border-box;}
-body {font-family: 'Noto Sans KR';}
-a {text-decoration: none;}
+body {font-family: 'Noto Sans KR'; letter-spacing: -0.1em;}
+a {color: #000; text-decoration: none;}
 li {list-style: none;}
 
 /* header 영역 */
@@ -11,6 +11,7 @@ header .mainBg .RhtBg {width: 80%; height: 100vh; background: url('../images/mai
 header nav { width: 100%; margin: 0 auto; display: flex; align-items: center; padding: 30px 60px; position: absolute; top: 0%;}
 .logo {margin-right: 340px;}
 header nav .logo img {width: 100%; max-width: 146px; cursor: pointer;}
+header nav .logo img:nth-child(2) {display: none;}
 header nav .mainNav {display: flex; align-items: center; margin-right: 180px;}
 header nav .mainNav li a {padding-right: 60px; color: #fff; font-size: 18px; font-weight: 400;}
 header nav .NavBtn {background-color: #fff; padding: 10px 30px; border: 0; box-shadow: 2px 6px 17px -3px rgba(0,0,0,0.3); margin-right: 120px;}
@@ -18,9 +19,31 @@ header nav .NavBtn a {color: #004d99; font-weight: 600; font-size: 14px; letter-
 
 .mainQckmn {width: 80%; max-width: 130px; position: fixed; top: 0; right: 3%; box-shadow: 5px 9px 15px 5px rgba(0,0,0,0.11); z-index: 100;}
 .mainQckmn .QckBtn {display: flex; flex-direction: column;}
+.mainQckmn .QckBg > span {text-align: center;}
+.mainQckmn .QckBg > span > img {width: 93px; position: absolute; top: 12%; left: 15%; z-index: 30; cursor: pointer;}
+.mainQckmn .QckBg > span > span {position: absolute; top: 23%; left: 7%; text-align: center; font-size: 12px; padding-top: 5px; text-shadow: 1px 1px 2px rgb(0 17 51 / 40%);color: #fff; letter-spacing: -0.1em; cursor: pointer;}
+.mainQckmn .QckBg > span > span > b {font-size: 14px; padding-bottom: 0; display: inline-block;}
+.mainQckmn .QckBg > img {position: relative;}
 .mainQckmn .QckBtn button {background-color: #00264d; border: 0; padding: 20px 0; margin-bottom: 3px;}
-.mainQckmn .QckBtn button a {color: #fff; font-weight: 600; font-size: 14px;}
+.mainQckmn .QckBtn button a {color: #fff; font-weight: 600; font-size: 15px;}
+
 /* header 영역 end */
+
+#bnrCnts {display: flex; max-width: 1360px; height: 80px; margin: 0 auto; align-items: center; overflow: hidden; width: calc(100% - 30px);}
+#bnrCnts > ul {width: calc(100% - 20px); height: 100%; transition: all 0.5s;}
+#bnrCnts > ul > li {width: 100%; height: 100%; display: flex; align-items: center; transition: all 0.5s;}
+#bnrCnts > ul > li > a {display: flex; align-items: center; width: 100%;}
+#bnrCnts > ul > li > a > strong {color: #4c6680; font-size: 20px; font-weight: bold;}
+#bnrCnts > ul > li > a > i {width: 1px; height: 16px; background-color: #d9d9d9; margin: 0 50px;}
+#bnrCnts > ul > li > a > s {margin-right: 60px; max-width: 113px; position: relative;}
+#bnrCnts > ul > li > a > s > img {width: 100%;}
+#bnrCnts > ul > li > a > b {color: #0097f1; font-weight: bold; font-size: 18px; margin-right: 15px; width: 180px;}
+#bnrCnts > ul > li > a > span {font-size: 16px; color: #2e3133; width: 40%;}
+#bnrCnts > ul > li > a > em {margin-left: auto; font-size: 16px; color: #a1aab2; font-style: normal; margin-right: 50px;}
+#bnrCnts > div > a {padding: 3px; margin: 16px auto; display: block;}
+#bnrCnts > div > a > s {width: 14px; height: 7px; display: block;}
+#bnrCnts > div > a:nth-child(1) > s {background: url('../images/img_sldUp.png') no-repeat; background-size: 100% auto;}
+#bnrCnts > div > a:nth-child(2) > s {background: url('../images/img_sldDwn.png') no-repeat; background-size: 100% auto;}
 
 .mainCnt01 {width: 80%; margin:0 auto; position: absolute; top: 20%; left: 9%;}
 .mainCnt01 .cntInf {display: flex; justify-content: center;}
@@ -41,6 +64,7 @@ header nav .NavBtn a {color: #004d99; font-weight: 600; font-size: 14px; letter-
 #cntSld01Prg > div > div > s.on{left:100%;transition:left 7.5s linear;}
 #cntSld01Prg > div > span {padding-left: 30px;}
 #cntSld01Prg > div > span > span {font-weight: bold; color: #fff; font-size: 14px; line-height: 22px; letter-spacing: 0;}
+
 /* main page 영역 끝 */
 
 .cvsCnt01 {background: url('../images/img_sample07.png') no-repeat; background-size: cover; background-position: center center; height: 640px; display: flex; align-items: center;}
@@ -52,19 +76,21 @@ header nav .NavBtn a {color: #004d99; font-weight: 600; font-size: 14px; letter-
 .cvsCnt01 > div > ul > li > span > strong {color: #00d9b5; font-size: 80px; line-height: 80px; display: inline-block;}
 .cvsCnt01 > div > ul > li > div {color: #fff; font-size: 18px; text-align: center; padding-top: 40px; line-height: 24px; font-weight: 500;}
 
-.viewBtn {width: 150px; height: 45px; color: #fff; display: inline-flex; font-size: 16px; align-items: center; border: 2px #fff solid; font-weight: bold; justify-content: center; letter-spacing: -0.05em; position: relative; align-items: center; line-height: 42px; box-shadow: 3px 4px 0px 0px rgb(5 17 51 / 20%);}
+.viewBtn {width: 150px; height: 45px; color: #fff; display: inline-flex; font-size: 16px; align-items: center; border: 2px #fff solid; font-weight: bold; justify-content: center; letter-spacing: -0.05em; position: relative; align-items: center; line-height: 42px; box-shadow: 3px 4px 0px 0px rgb(5 17 51 / 20%); transition:all 0.5s;}
+.viewBtn:hover {transform: translateX(-3px) translateY(-3px); box-shadow: 9px 10px 0px 0px rgba(5, 17, 51, 0.2); transition: all 0.5s;}
 .viewBtn s {width: 30px; height: 14px; background: url('../images/img_vewBtn.png'); background-size: 100% auto; position: absolute; left: -13px;}
+
 /* cvsCnt01 영역 끝 */
 
 .cvsCnt02 {padding: 115px 0 115px 0;}
 .cvsCnt02 > div {max-width: 1360px; margin: 0 auto; position: relative; width: calc(100% -40px); margin-bottom: 50px;}
 
-.cntTtl > strong {color: #001933; font-size: 30px; display: block; padding-bottom: 30px;     letter-spacing: -0.04em;}
+.cntTtl > strong {color: #001933; font-size: 30px; display: block; padding-bottom: 30px;    letter-spacing: -0.04em; line-height: 30px;}
 .cntTtl > span {color: #001933; font-size: 30px; display: block; font-weight: 300; letter-spacing: -0.1em; line-height: 44px;} 
 .cntTtl > span > b { color: #2d62cc;}
 
 .vewMr {text-align: right; margin-top: -20px;}
-.vewMoreBlu {color: #1945cc; font-weight: bold; font-size: 16px; display: inline-block; letter-spacing: -0.05em;}
+.vewMoreBlu {color: #1945cc; font-weight: bold; font-size: 16px; display: inline-block; letter-spacing: -0.1em;}
 .vewMoreBlu s {width: 30px; height: 14px; background: url('../images/img_vewBtnBlu.png') no-repeat; background-size: 100% auto; display: inline-block; margin-right: 18px; transform: translateY(1px);}
 
 .blgCtl {position: absolute; top: calc(50% - 35px); left: 50%; width: 100%; z-index: 10;}
@@ -77,34 +103,118 @@ header nav .NavBtn a {color: #004d99; font-weight: 600; font-size: 14px; letter-
 .blgSldItm > div > div > strong {color: #000; font-size: 18px; line-height: 24px; margin-bottom: 15px; margin-top: 10px; height: 48px;}
 .blgSldItm > div > div > p {color: #737980; font-size: 14px; line-height: 22px; text-overflow: ellipsis; height: 24px; word-break: keep-all;}
 .blgSldItm > div > a {transform: translateY(-25px);}
-
 .VewBtnGry {color: #a1aab2; font-size: 16px; display: flex; letter-spacing: 0;}
 .VewBtnGry > s {width: 30px; height: 14px; background: url('../images/img_vewBtnGry.png') no-repeat; background-size: 100% auto; margin-left: auto; margin-top: 5px;}
+.VewBtnGry:hover > s {background: url('../images/img_vewBtnBlu.png') no-repeat; background-size: 100% auto;}
 .VewBtnBlu {color: #a1aab2; font-size: 16px; display: flex; letter-spacing: 0;}
 .VewBtnBlu > s {width: 30px; height: 14px; background: url('../images/img_vewBtnBlu.png') no-repeat; background-size: 100% auto; margin-left: auto; margin-top: 5px;}
 
 .blgCtl {position: absolute; top: calc(50% - 25px); left: 0; width: 100%; z-index: 10;}
 .blgSldPrv {width: 19px; height: 36px; position: absolute; background: url('../images/img_sldPrv02.png') no-repeat; background-size: 100% auto; left: -60px; }
 .blgSldNxt {width: 19px; height: 36px; position: absolute; background: url('../images/img_sldNxt02.png') no-repeat; background-size: 100% auto; right: -60px; }
+
 /* cvsCnt02 영역 끝 */
 
 .cvsCnt03 > div { position: relative; height: 860px;}
-.cvsCnt03 > div > img:first-child {position: absolute; top: 160px; right: calc(50%) - 260px; top: 50%; min-width: 1220px;}
-.cvsCnt03 > div > img:last-child{top:52%;left:calc(50% - 220px);width:calc(440px);transform:translateY(-60%);}
 
-.cnt03sls > div {background-color: #1945cc;position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; opacity:0; transition:opacity 0.5s;}
-.cnt03sls > div.on{opacity:1; transition: all 1.0s; z-index: 10;}
-.cnt03sls > div.on > img:first-child{right:calc(50% - 260px);transition:all 1.0s;}
+.cnt03sls > div {background-color: #1945cc;position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow: hidden; opacity:0; transition: all 1.0s;}
+.cnt03sls > div.on{opacity:1;}
+.cnt03sls > div > img:first-child{right:calc(50% - 260px);}
+.cnt03sls > div > img:last-child {position: absolute; top: 190px; left: calc(50% - 100px);box-shadow: 15px 26px 40px 0px rgb(0 0 0 / 40%);}
 .cnt03sls > div > span {position: absolute; font-size: 280px; color: #fff; font-weight: bold; opacity: 0.08; top: 160px; right: calc(50%) - 260px; font-family: Arial, Helvetica, sans-serif;}
 .cnt03sls > div > div {width: 87%; position: absolute; top: 245px; display: flex; align-items: flex-end; flex-direction: column;}
 .cnt03sls > div > div > strong {color: #fff; font-size: 50px; font-weight: bold; text-align: right; padding-bottom: 40px;}
 .cnt03sls > div > div > p {font-size: 18px; color: #fff; font-weight: bold; text-align: right; padding-bottom: 160px;}
-.cnt03sls > div > img:last-child {position: absolute; top: 190px; left: calc(50% - 100px);box-shadow: 15px 26px 40px 0px rgb(0 0 0 / 40%);}
 
-.cnt03Chp {position:absolute;top:50%;left:calc(50%);transform:translateY(-50%) translateX(-100%);max-width:680px;width:calc(50% - 50px);z-index:15;}
+.cnt03Chp {position:absolute; top:50%;left:calc(50%);transform:translateY(-50%) translateX(-100%);max-width:680px;width:calc(50% - 50px);z-index:15;}
 .cnt03Chp > strong {font-size:24px;color:#fff;padding-bottom:35px;display:block;}
 .cnt03Chp > span {font-size:30px;color:#fff;padding-bottom:50px;display:block;}
 .cnt03Chp > ul {max-width: 300px;}
 .cnt03Chp > ul > li > a.on {background-color:#1945cc;box-shadow: 15px 26px 40px 0px rgba(0, 0, 0, 0.4);transition:all 1.0s;}
 .cnt03Chp > ul > li > a {display:block;line-height:70px;color:#fff;font-size:18px;padding:0 40px;font-weight:bold;transition:all 1.0s;}
 .cnt03Chp > ul > li > a > span {color:#00d5ff;font-weight:bold;padding-right:20px;transition:all 1.0s;}
+
+/* cvsCnt03 영역 끝 */
+
+.cvsCnt04 {padding: 180px 0; overflow: hidden;}
+.cvsCnt04 > div {max-width: 1360px; margin: 0 auto; position: relative; width: calc(100% - 30px);}
+.cvsCntTtl > strong {color: #001933; font-size: 30px; display: block; padding-bottom: 25px; line-height: 30px;}
+.cvsCntTtl > span {color: #001933; font-size: 30px; display: block; font-weight: 300; letter-spacing: -0.1em; line-height: 44px; padding-bottom: 30px;}
+.cvsCntTtl > span > b {color: #2d62cc;}
+
+.cnt04Itm {display: flex; position: relative; margin-top: 50px; flex-wrap: wrap;}
+.cnt04Itm > a {width: 234px; margin-right: 30px; position: relative; margin-bottom: 30px;}
+.cnt04Itm > a > img {width: 100%; vertical-align: middle;}
+.cnt04Itm > a > span {font-size: 14px; color: #a1aab2; position: absolute; left: 0; bottom: -30px; font-weight: bold; overflow: hidden;}
+.cnt04Itm > a:last-child {position: absolute; max-width: 540px; bottom: 0; right: 0; margin-right: 0; width: 32.5vw;}
+.cnt04Itm > a > s {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color:rgba(0,108,241,0.8); opacity: 0; transition: 0.5s;}
+.cnt04Itm > a > s > img {width: 30px; height: 14px; position: absolute; top: calc(50% - 6px); left: calc(50% - 15px);}
+.cnt04Itm > a:hover > s {opacity: 1; transition: 0.5s; box-shadow: 10px 17px 40px 0px rgba(0, 0, 0, 0.3);}
+
+/* cvsCnt04 영역 끝 */
+
+.cvsCnt05 {padding: 160px 0;}
+.cvsCnt05 > div {max-width: 1360px; margin: 0 auto; position: relative; width: calc(100% - 30px);}
+.cvsCntTtl2 > strong {font-size: 24px; line-height: 24px; letter-spacing: -0.1em;}
+
+.mySwiper_cntItm {padding-top: 50px; position: relative;}
+.cntSty {cursor: pointer; border: 1px #ebebeb solid; transition: all 0.5s;}
+.cntSty:hover {transform: translateY(-20px); box-shadow: 2px 6px 17px -3px rgba(0,0,0,0.3);}
+.lgoCnt {display: block; width: 100%; height: 215px; position: relative; background-color: #fff;}
+.lgoCnt > s {position: absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%);}
+.lgoCnt > s > span {position: absolute; background-color: #fff;}
+
+.cntSty > div {padding: 30px 30px 50px 30px; background-color: #fff;}
+.cntSty > div > p {font-size: 18px; line-height: 24px; color: #001933; margin-bottom: 60px ;}
+
+/* cvsCnt05 영역 끝 */
+
+.cvsCnt06 {background-color: #1645cc; display: flex; align-items: center; justify-content: center; height: 280px;}
+.cvsCnt06 > div {display: flex; flex-direction: column; justify-content: center; align-items: center;}
+.cvsCnt06 > div > strong {font-size: 30px; color: #fff; line-height: 30px; padding-bottom: 20px;}
+.cvsCnt06 > div > span {font-size: 28px; color: #fff; line-height: 28px;  padding-bottom: 40px;}
+.cvsCnt06 > div > span > b {color: #00d9b5;}
+
+/* cvsCnt06 영역 끝 */
+
+.ftr {background-color: #2e323d;}
+.ftr > div {max-width: 1360px; margin: 0 auto; padding-bottom: 100px; width: calc(100% - 30px);}
+#ftrInf {padding: 30px 0; display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center;}
+#ftrLgo > img {width: 144px;}
+#ftrInf> div {display: flex; justify-content: flex-end;}
+#ftrInf> div > ul {display: flex; flex-wrap: wrap; padding-right: 40px; align-items: center;}
+#ftrInf> div > ul > li {position: relative; padding-left: 20px; margin-left: 20px;}
+#ftrInf> div > ul > li > a {color: #fff; font-size: 14px;}
+#ftrInf> div > ul > li::before {width: 3px;height: 3px;background-color: #585b64;position: absolute;top: 50%;transform: translateY(-50%);left: 0;content: " ";}
+#ftrInf> div > select {color: #999999; font-size: 14px; width: 160px; border: 1px #585b64 solid; height: 40px; padding: 0 15px; background: url('../images/img_drpDwn.png') no-repeat;background-size: 14px auto; background-position: center right 15px; -webkit-appearance: none; font-family: Arial, Helvetica, sans-serif; cursor: pointer;}
+#ftrInf> div > select > option {color: #999999; font-size: 14px;}
+
+#ftrCpy {border-top: 1px #3d404b solid; padding-top: 30px; display: flex; justify-content: space-between;}
+#ftrCll {padding-right: 30px;}
+#ftrCll > div > strong {font-size: 22px; color: #fff; padding-right: 15px;}
+#ftrCll > div > span {font-size: 16px; color: #fff; opacity: 0.4; letter-spacing: -0.1em;}
+#ftrCll > strong {font-size: 32px; color: #1ab2ff; letter-spacing: 0; font-weight: normal; font-family: Arial, Helvetica, sans-serif; padding-top: 10px; line-height: 110%; display: block;}
+
+#ftrCs {padding: 0 30px; border-left: 1px #3d404b solid;}
+#ftrCs > div > strong {font-size: 22px; color: #fff; padding-right: 15px;}
+#ftrCs > div > span {font-size: 16px; color: #fff; opacity: 0.4; letter-spacing: -0.1em;}
+#ftrCs > strong {font-size: 32px; color: #00D9B6; letter-spacing: 0; font-weight: normal; font-family: Arial, Helvetica, sans-serif; padding-top: 10px; line-height: 110%; display: block;}
+#ftrCs > strong > span {font-size: 16px; vertical-align: middle;}
+
+#ftrAddr {width: 510px; border-left: 1px #3d404b solid; border-right: 1px #3d404b solid;padding: 0 30px;}
+#ftrAddr > * {color: #fff; font-size: 13px; opacity: 0.6; letter-spacing: -0.05em; line-height: 26px;}
+#ftrAddr > ul {display: flex;}
+#ftrAddr > ul > li {padding-left: 11px; position: relative; margin-left: 11px;}
+#ftrAddr > ul > li::before {width: 3px; height: 3px; background-color: #585b64; position: absolute; top: 50%; left: 0; content: ""; }
+#ftrAddr > ul > li:first-child {padding-left: 0; margin-left: 0;}
+
+#ftrPrt > ul {display: flex; flex-wrap: wrap; width: 170px; justify-content: center;}
+#ftrPrt > ul > li {padding-bottom: 15px; margin-left: 15px;}
+#ftrPrt > ul > li:nth-child(1) > img {width: 60px;}
+#ftrPrt > ul > li:nth-child(2) > img {width: 78px;}
+#ftrPrt > ul > li:nth-child(3) > img {width: 44px;}
+#ftrPrt > ul > li:nth-child(4) > img {width: 52px;}
+#ftrPrt > ul > li:nth-child(5) > img {width: 49px;}
+#ftrPrt > ul > li:nth-child(6) > img {width: 89px;}
+
+/* 푸터 영역 끝 */

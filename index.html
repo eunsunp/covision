@@ -5,11 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COVISION</title>
-    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
-/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <!--swiper--slider-->
     <link rel="stylesheet" href="css/style.css">
     <!-- main.css -->
+
+	<style type="text/css">
+        .cvsAnm{opacity:0;transform:translateY(30px);transition:all 0.5s;}
+        .cvsAnm.on{opacity:1;transform:translateY(0);transition:all 0.5s;}
+    </style>
 </head>
 <body>
     <header>
@@ -19,6 +23,7 @@
         <nav>
             <div class="logo">
                 <img src="images/logo.png" >
+                <img src="images/img_logoOn.png" >
             </div>
             <ul class="mainNav">
                 <li><a href="javascript:;">그룹웨어</a></li>
@@ -33,10 +38,18 @@
         <div class="mainQckmn">
             <div class="QckBg">
                 <img src="images/img_weharangBg.png" >
-            </div>
-            <div class="QckBtn">
-                <button><a href="javascript:;">more</a></button>
-                <button><a href="javascript:;">도입문의</a></button>
+                <span>
+                    <img src="images/img_weharang.png" >
+                    <span>
+                        <b>클라우드형 그룹웨어</b>
+                        <br/>
+                        사이트 가기
+                    </span>
+                </span>
+                <div class="QckBtn">
+                    <button><a href="javascript:;">more</a></button>
+                    <button><a href="javascript:;">도입문의</a></button>
+                </div>
             </div>
         </div>
     <!-- Swiper -->
@@ -100,6 +113,81 @@
     </header>
     <!-- header 영역 끝 -->
 
+    <div class="cvsCntBnr">
+        <div id="bnrCnts">
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <strong>New Customer</strong>
+                        <i></i>
+                        <s>
+                            <img src="images/GSglobal_logo.png" >
+                        </s>
+                        <b>[GS글로벌]</b>
+                        <span>그룹웨어 재구축 프로젝트 수주</span>
+                        <em>2021-11-08</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <strong>new Customer</strong>
+                        <i></i>
+                        <s>
+                            <img src="images/gumhoENC_logo.png" >
+                        </s>
+                        <b>[금호건설]</b>
+                        <span>그룹웨어 시스템 구축 프로젝트 수주</span>
+                        <em>2021-10-21</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <strong>new Customer</strong>
+                        <i></i>
+                        <s>
+                            <img src="images/pimaterials_logo.png" >
+                        </s>
+                        <b>[PI첨단소재]</b>
+                        <span>그룹웨어 재구축 프로젝트 수주</span>
+                        <em>2021-10-01</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <strong>new Customer</strong>
+                        <i></i>
+                        <s>
+                            <img src="images/autonics_logo.png" >
+                        </s>
+                        <b>[오토닉스]</b>
+                        <span>신규 그룹웨어 시스템 구축 프로젝트 수주</span>
+                        <em>2021-09-24</em>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <strong>new Customer</strong>
+                        <i></i>
+                        <s>
+                            <img src="images/elandgroup_logo.png" >
+                        </s>
+                        <b>[이랜드그룹]]</b>
+                        <span>스마트 그룹업무 포털 시스템 구축 프로젝트 수주</span>
+                        <em>2021-09-10</em>
+                    </a>
+                </li>
+            </ul>
+            <div>
+                <a href="javascript:;">
+                    <s></s>
+                </a>
+                <a href="javascript:;">
+                    <s></s>
+                </a>
+            </div>
+        </div>
+    </div>
+
     <div class="cvsCnt01">
         <div>
             <strong>COVISION REFERENCE</strong>
@@ -148,6 +236,8 @@
             <div id="blgCntSld" class="swiper-container" style="overflow:visible;">
                 <div class="swiper mySwiper-blgSld">
                     <div class="swiper-wrapper">
+
+
                       <div class="blgSldItm swiper-slide">
                           <img src="images/newsimg_01.jpg" >
                           <div>
@@ -162,6 +252,7 @@
                           </div>
                       </div>
 
+
                       <div class="blgSldItm swiper-slide">
                           <img src="images/newsimg_02.jpg" >
                           <div>
@@ -175,19 +266,23 @@
                             </a>
                           </div>
                       </div>
+
+
                       <div class="blgSldItm swiper-slide">
                         <img src="images/newsimg_03.jpg" >
                         <div>
                           <span style="background-color: #1945cc">기능소개</span>
-                          <div>
-                            <strong style="font-weight: 400;">기업용 메신저 일과 사랑을 잇는 이음톡 신규 출시</strong>
-                            <p>지난 코비젼의 구축형 그룹웨어 포스팅에 이어 구축형의 특장점에 대해 알아보는 시간을 갖도록 하겠습니다.</p>
-                        </div>
-                        <a href="javascript:;" class="VewBtnGry">2021-07-23
-                            <s></s>
-                        </a>
-                        </div>
+                            <div>
+                                <strong style="font-weight: 400;">기업용 메신저 일과 사랑을 잇는 이음톡 신규 출시</strong>
+                                <p>지난 코비젼의 구축형 그룹웨어 포스팅에 이어 구축형의 특장점에 대해 알아보는 시간을 갖도록 하겠습니다.</p>
+                            </div>
+                            <a href="javascript:;" class="VewBtnGry">2021-07-23
+                                <s></s>
+                            </a>
+                            </div>
                       </div>
+
+
                       <div class="blgSldItm swiper-slide">
                         <img src="images/newsimg_04.jpg" >
                         <div>
@@ -201,6 +296,37 @@
                         </a>
                         </div>
                       </div>
+
+
+                      <div class="blgSldItm swiper-slide">
+                        <img src="images/newsimg_05.jpg" >
+                        <div>
+                          <span style="background-color: #00bfbf">코비젼소식</span>
+                          <div>
+                            <strong style="font-weight: 400;">코비젼 제 20회 SW경쟁력 대상<br/> 최우수상 수상!</strong>
+                            <p>지난 코비젼의 구축형 그룹웨어 포스팅에 이어 구축형의 특장점에 대해 알아보는 시간을 갖도록 하겠습니다.</p>
+                        </div>
+                        <a href="javascript:;" class="VewBtnGry">2021-10-25
+                            <s></s>
+                        </a>
+                        </div>
+                      </div>
+
+                      <div class="blgSldItm swiper-slide">
+                        <img src="images/newsimg_06.jpg" >
+                        <div>
+                          <span style="background-color: #00bfbf">협업트렌드</span>
+                          <div>
+                            <strong style="font-weight: 400;">쉽고 정확하고 간편하게!</strong>
+                            <p>지난 코비젼의 구축형 그룹웨어 포스팅에 이어 구축형의 특장점에 대해 알아보는 시간을 갖도록 하겠습니다.</p>
+                        </div>
+                        <a href="javascript:;" class="VewBtnGry">2021-10-25
+                            <s></s>
+                        </a>
+                        </div>
+                      </div>
+
+
                     </div>
                 </div>
             </div>
@@ -208,9 +334,9 @@
     </div>
     <!-- cvsCnt02 영역 끝 -->
 
-    <div class="cvsCnt03">
+    <div class="cvsAnm cvsCnt03 on">
         <div>
-            <div class="cnt03sls">
+            <div class="cnt03sls ">
                 <div class="on">
                     <img src="images/img_sample04.png">
                     <span>01</span>
@@ -223,7 +349,7 @@
                     </div>
                     <img src="images/img_sample03_0.png" >
                 </div>
-                <div>
+                <div class="cntHd">
                     <img src="images/img_sample04.png">
                     <span>02</span>
                     <div>
@@ -240,7 +366,7 @@
                     <span>03</span>
                     <div>
                         <strong>근태관리</strong>
-                        <p>다양한 근무환경을 지원하는 <br />근태관리 솔루션</p>
+                        <p>다양한 근무환경을 지원하는 <br/>근태관리 솔루션</p>
 						<a href="javascript:;" class="viewBtn">
                             <s class="onlPsc"></s>
                             VIEW</a>
@@ -276,9 +402,216 @@
             </div>
         </div>
     </div>
+    <div class="cvsCnt04">
+        <div>
+            <div class="cvsCntTtl">
+                <strong>SUCCESS STORY</strong>
+                <span>성공적 도입사례의 <b>생생한 목소리</b>를 지금 확인해 보세요.</span>
+                <a href="javascript:;" class="vewMoreBlu"><s></s>MORE</a>
+            </div>
+            <div class="cnt04Itm">
+                <a href="javascript:;">
+                    <img src="images/storyimg_01.png" >
+                    <s><img src="images/img_vewBtn.png" ></s>
+                    <span>일동제약</span>
+                </a>
+                
+                <a href="javascript:;">
+                    <img src="images/storyimg_02.jpg" >
+                    <s><img src="images/img_vewBtn.png" ></s>
+                    <span>락앤락</span>
+                </a>
+                
+                <a href="javascript:;">
+                    <img src="images/storyimg_03.jpg" >
+                    <s><img src="images/img_vewBtn.png" ></s>
+                    <span>하이네켄코리아</span>
+                </a>
+                
+                <a href="javascript:;">
+                    <img src="images/storyimg_01.png" >
+                    <s><img src="images/img_vewBtn.png" ></s>
+                    <span>일동제약</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="cvsCnt05" style="background-color:#f5f9fc;">
+        <div>
+            <div class="cvsCntTtl cvsCntTtl2">
+                <strong>수주소식</strong>
+                <span>코비젼을 선택하신 <b>새로운 고객</b>을 소개합니다.</span>
+            </div>
+            <div class="vewMr">
+                <a href="javascript:;" class="vewMoreBlu vewMoreBluRgt"><s></s>MORE</a>
+            </div>
+
+            <div class="cvsCnt05Itm">
+                <div class="swiper mySwiper_cntItm">
+                    <div class="swiper-wrapper">
+
+
+                      <div class="cntSty swiper-slide">
+                          <div class="lgoCnt">
+                              <s>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <span></span>
+                                  <img src="images/GSglobal_logo.png" >
+                              </s>
+                          </div>
+                          <div>
+                            <p>[GS글로벌] 그룹웨어 재구축 프로젝트 수주</p>
+                            <a href="javascript:;" class="VewBtnGry">2021-10-25
+                                <s></s>
+                            </a>
+                          </div>
+                      </div>
+
+
+                      <div class="cntSty swiper-slide">
+                        <div class="lgoCnt">
+                            <s>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <img src="images/gumhoENC_logo.png" >
+                            </s>
+                        </div>
+                        <div>
+                          <p>[금호건설] 그룹웨어 시스템 구축 프로젝트 수주</p>
+                          <a href="javascript:;" class="VewBtnGry">2021-10-25
+                              <s></s>
+                          </a>
+                        </div>
+                      </div>
+
+
+                      <div class="cntSty swiper-slide">
+                        <div class="lgoCnt">
+                            <s>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <img src="images/pimaterials_logo.png" >
+                            </s>
+                        </div>
+                        <div>
+                          <p>[PI첨단소재] 그룹웨어 재구축 프로젝트 수주</p>
+                          <a href="javascript:;" class="VewBtnGry">2021-10-25
+                              <s></s>
+                          </a>
+                        </div>
+                      </div>
+
+
+                      <div class="cntSty swiper-slide">
+                        <div class="lgoCnt">
+                            <s>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <img src="images/autonics_logo.png" >
+                            </s>
+                        </div>
+                        <div>
+                          <p>[오토닉스] 신규 그룹웨어 시스템 구축 프로젝트 수주</p>
+                          <a href="javascript:;" class="VewBtnGry">2021-10-25
+                              <s></s>
+                          </a>
+                        </div>
+                      </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+    </div>
+    <div class="cvsCnt06">
+        <div>
+            <strong>COVISION</strong>
+            <span>코비젼의 솔루션! <b>지금 시작</b>해보세요!</span>
+            <a href="javascript:;" class="viewBtn">
+                <s class="on1psc"></s>
+                도입문의하기
+            </a>
+        </div>
+    </div>
+    <div class="ftr">
+        <div>
+            <div id="ftrInf">
+                <a href="javascript:;" id="ftrLgo"><img src="images/img_logo.png" ></a>
+                <div>
+                    <ul>
+                        <li><a href="javascript:;">회사소개</a></li>
+                        <li><a href="javascript:;">인재채용</a></li>
+                        <li><a href="javascript:;">오시는길</a></li>
+                        <li><a href="javascript:;">제휴문의</a></li>
+                        <li><a href="javascript:;">스마트케어센터</a></li>
+                        <li><a href="javascript:;">개인정보처리방침</a></li>
+                    </ul>
+                    <select id="famBx">
+                        <option value="">패밀리 사이트</option>
+                        <option value="">코비젼 홈페이지</option>
+                        <option value="">위하랑 홈페이지</option>
+                    </select>
+                </div>
+            </div>
+            <div id="ftrCpy">
+                <div id="ftrCll">
+                    <div>
+                        <strong>도입문의</strong>
+                        <span>평일 09:00~18:00</span>
+                    </div>
+                    <strong>010-8181-6491<br/>010-8181-7836</strong>
+                </div>
+                <div id="ftrCs">
+                    <div>
+                        <strong>CS문의</strong>
+                        <span>평일 09:00~18:00</span>
+                    </div>
+                    <strong>
+                        <span>구축형: </span>02-6965-3114<br/>
+                        <span>하랑/위하랑: </span>070-8209-4370
+                    </strong>
+                </div>
+                <div id="ftrAddr">
+                    <span>㈜코비젼 서울시 강서구 마곡중앙 8로 7길 11 (D&C Campus)</span>
+                    <ul>
+                        <li>대표이사 : 위장복</li>
+                        <li>사업자 등록번호 : 109-81-73212</li>
+                        <li>대표전화 : 02-6965-3100</li>
+                    </ul>
+                    <span>제품문의 : mkt@covision.co.kr</span>
+                    <br/>
+                    <span>Copyright 2021. Covision corp. All Rights Reserved.</span>
+                </div>
+                <div id="ftrPrt">
+                    <ul>
+                        <li><img src="images/img_ftrPrt01.png"></li>
+                        <li><img src="images/img_ftrPrt02.png"></li>
+                        <li><img src="images/img_ftrPrt03.png"></li>
+                        <li><img src="images/img_ftrPrt04.png"></li>
+                        <li><img src="images/img_ftrPrt05.png"></li>
+                        <li><img src="images/img_ftrPrt06.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/jquery.vticker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
     <script src="js/main.js"></script>
 
 </body>
